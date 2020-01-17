@@ -19,8 +19,8 @@ typedef struct cpuinfo_element {
 } cpuinfo_ele;
 
 #define CPUINFOELE(_name,_type) {	\
-	.name = _name,					\
-	.type = _type					\
+	.name = _name,			\
+	.type = _type			\
 }
 
 int get_info();

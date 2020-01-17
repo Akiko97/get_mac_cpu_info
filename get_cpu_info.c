@@ -54,8 +54,15 @@ cpuinfo_ele list[] = {
 int main() {
 	int ret = 0;
 	ret = get_info();
+	if (ret) {
+		goto out;
+	}
 	ret = show_info();
+	if (ret) {
+		goto out;
+	}
 	free_list();
+out:
 	return ret;
 }
 
